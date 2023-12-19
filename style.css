@@ -50,19 +50,19 @@ body {
   
 }
 
-#music-controls {
-  margin-top: 1.6rem;
-  padding: 2.2rem 4rem;
-  gap: 5rem;
-  
-}
-
 button {
   background-color: transparent;
   border: none;
   color: chocolate;
   cursor: pointer;
   font-size: 6.4rem;
+}
+
+#music-controls {
+  margin-top: 1.6rem;
+  padding: 2.2rem 4rem;
+  gap: 5rem;
+  
 }
 
 #music-controls button {
