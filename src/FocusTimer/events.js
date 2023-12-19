@@ -10,7 +10,7 @@ export function registerControls() {
     if (typeof actions[action] != "function") {
       return
     }
-
+    console.log(action);
     actions[action]()
   })
 }

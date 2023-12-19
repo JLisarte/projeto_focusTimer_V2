@@ -23,7 +23,7 @@ export function set() {
   sounds.buttonPressAudio.play()
 }
 
-export function toggleMusic() {
+export function toggleMusicTree() {
   state.isMute = document.documentElement.classList.toggle("music-on")
 
   if(state.isMute) {
