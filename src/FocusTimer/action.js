@@ -43,14 +43,12 @@ export function lessTime() {
   sounds.buttonPressAudio.play()
 }
 
-export function toggleMusicTree() {
-  state.isMute = document.documentElement.classList.toggle("mute")
+export function toggleMusic() {
+  state.isMute = document.documentElement.classList.toggle("music-on")
 
-  if(state.isMute) {
+  if (state.isMute) {
     sounds.buttonTree.play()
     return
   }
   sounds.buttonTree.pause()
-
-  console.log(state.isMute);
 }

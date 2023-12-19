@@ -53,7 +53,7 @@ body {
 button {
   background-color: transparent;
   border: none;
-  color: chocolate;
+  color: #d2691e;
   cursor: pointer;
   font-size: 6.4rem;
 }
@@ -81,9 +81,9 @@ button {
 /* Timer Controls */
 .running .ph-play-circle,
 .running .ph-timer,
-html:not(.running) .ph-pause-circle, 
-html:not(.running) .ph-stop-circle {
-  display: none;
+.music-on .ph-tree, 
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-tree-evergreen {
+display: none;
 }
-
-/* Music Controls */
