@@ -1,4 +1,4 @@
 import * as FocusTimer from "./FocusTimer/index.js"
 
-FocusTimer.start(0, 3)
+FocusTimer.start(0, 0)
 
