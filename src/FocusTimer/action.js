@@ -43,12 +43,56 @@ export function lessTime() {
   sounds.buttonPressAudio.play()
 }
 
-export function toggleMusic() {
-  state.isMute = document.documentElement.classList.toggle("music-on")
+export function toggleMusicTree() {
+  state.isMute = document.documentElement.classList.toggle("music-on-tree")
 
   if (state.isMute) {
     sounds.buttonTree.play()
+    sounds.buttonRain.pause()
+    sounds.buttonCoffe.pause()
+    sounds.buttonFire.pause()
     return
   }
   sounds.buttonTree.pause()
+}
+
+export function toggleMusicRain() {
+  state.isMute = document.documentElement.classList.toggle("music-on-cloud")
+
+  if (state.isMute) {
+    sounds.buttonRain.play()
+    sounds.buttonTree.pause()
+    sounds.buttonCoffe.pause()
+    sounds.buttonFire.pause()
+    return
+  }
+  sounds.buttonRain.pause()
+}
+
+export function toggleMusicShop() {
+  state.isMute = document.documentElement.classList.toggle(
+    "music-on-storefront"
+  )
+
+  if (state.isMute) {
+    sounds.buttonCoffe.play()
+    sounds.buttonTree.pause()
+    sounds.buttonRain.pause()
+    sounds.buttonFire.pause()
+    return
+  }
+  sounds.buttonCoffe.pause()
+}
+
+export function toggleMusicFire() {
+  state.isMute = document.documentElement.classList.toggle("music-on-campfire")
+
+  if (state.isMute) {
+    sounds.buttonFire.play()
+    sounds.buttonTree.pause()
+    sounds.buttonRain.pause()
+    sounds.buttonCoffe.pause()
+    return
+  }
+  sounds.buttonFire.pause()
 }

@@ -13,6 +13,22 @@ export function registerControls() {
     console.log(action);
     actions[action]()
   })
+  musicControlsOne.addEventListener("click", (event) => {
+    const action = event.target.dataset.action
+    if (typeof actions[action] != "function") {
+      return
+    }
+    console.log(action);
+    actions[action]()
+  })
+  musicControlsTwo.addEventListener("click", (event) => {
+    const action = event.target.dataset.action
+    if (typeof actions[action] != "function") {
+      return
+    }
+    console.log(action);
+    actions[action]()
+  })
 }
 
 export function setMinutes() {

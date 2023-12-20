@@ -58,14 +58,26 @@ button {
   font-size: 6.4rem;
 }
 
-#music-controls {
+#musicControlsOne {
   margin-top: 1.6rem;
   padding: 2.2rem 4rem;
   gap: 5rem;
-  
+}
+#musicControlsTwo {
+  margin-top: 1.6rem;
+  padding: 2.2rem 4rem;
+  gap: 5rem;
 }
 
-#music-controls button {
+#musicControlsOne button {
+  font-size: 4.8rem;
+  background-color: aliceblue;
+  color: #000851;
+  border-radius: 25%;
+  width: 10rem;
+  height: 10rem;
+}
+#musicControlsTwo button {
   font-size: 4.8rem;
   background-color: aliceblue;
   color: #000851;
@@ -81,9 +93,15 @@ button {
 /* Timer Controls */
 .running .ph-play-circle,
 .running .ph-timer,
-.music-on .ph-tree, 
+.music-on-tree .ph-tree, 
+.music-on-cloud .ph-cloud,
+.music-on-storefront .ph-storefront,
+.music-on-campfire .ph-campfire,
 html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
-html:not(.music-on) .ph-tree-evergreen {
-display: none;
+html:not(.music-on-tree) .ph-tree-evergreen, 
+html:not(.music-on-cloud) .ph-confetti,
+html:not(.music-on-storefront) .ph-cloud-snow,
+html:not(.music-on-campfire) .ph-fire-extinguisher {
+  display: none;
 }
