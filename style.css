@@ -47,7 +47,6 @@ body {
   margin-top: 2rem;
   padding: 2.2rem 4rem;
   gap: 1.6rem;
-  
 }
 
 button {
@@ -58,18 +57,28 @@ button {
   font-size: 6.4rem;
 }
 
-#musicControlsOne {
-  margin-top: 1.6rem;
-  padding: 2.2rem 4rem;
-  gap: 5rem;
-}
-#musicControlsTwo {
-  margin-top: 1.6rem;
-  padding: 2.2rem 4rem;
-  gap: 5rem;
+button:hover {
+  color: aliceblue;
 }
 
-#musicControlsOne button {
+p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+
+#musicControls {
+  margin-top: 1.6rem;
+  padding: 2.2rem 4rem;
+  gap: 2rem;
+}
+
+#musicControls button {
   font-size: 4.8rem;
   background-color: aliceblue;
   color: #000851;
@@ -77,17 +86,18 @@ button {
   width: 10rem;
   height: 10rem;
 }
-#musicControlsTwo button {
-  font-size: 4.8rem;
-  background-color: aliceblue;
-  color: #000851;
-  border-radius: 25%;
-  width: 10rem;
-  height: 10rem;
+
+#musicControls button:hover {
+  background-color: #000851;
+  color: aliceblue;
 }
 
 .secondary {
   color: aliceblue;
+}
+
+.secondary:hover {
+  color: #d2691e;
 }
 
 /* Timer Controls */
@@ -100,8 +110,17 @@ button {
 html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
 html:not(.music-on-tree) .ph-tree-evergreen, 
-html:not(.music-on-cloud) .ph-confetti,
-html:not(.music-on-storefront) .ph-cloud-snow,
+html:not(.music-on-cloud) .ph-cloud-snow,
+html:not(.music-on-storefront) .ph-confetti,
 html:not(.music-on-campfire) .ph-fire-extinguisher {
   display: none;
 }
+
+.ph-tree-evergreen::before,
+.ph-cloud-snow::before,
+.ph-confetti::before,
+.ph-fire-extinguisher::before {
+  background-color: #000851;
+  color: aliceblue;
+}
+

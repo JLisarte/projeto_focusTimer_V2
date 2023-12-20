@@ -44,6 +44,9 @@ export function lessTime() {
 }
 
 export function toggleMusicTree() {
+  document.documentElement.classList.remove("music-on-cloud")
+  document.documentElement.classList.remove("music-on-storefront")
+  document.documentElement.classList.remove("music-on-campfire")
   state.isMute = document.documentElement.classList.toggle("music-on-tree")
 
   if (state.isMute) {
@@ -57,6 +60,9 @@ export function toggleMusicTree() {
 }
 
 export function toggleMusicRain() {
+  document.documentElement.classList.remove("music-on-tree")
+  document.documentElement.classList.remove("music-on-storefront")
+  document.documentElement.classList.remove("music-on-campfire")
   state.isMute = document.documentElement.classList.toggle("music-on-cloud")
 
   if (state.isMute) {
@@ -70,6 +76,9 @@ export function toggleMusicRain() {
 }
 
 export function toggleMusicShop() {
+  document.documentElement.classList.remove("music-on-tree")
+  document.documentElement.classList.remove("music-on-cloud")
+  document.documentElement.classList.remove("music-on-campfire")
   state.isMute = document.documentElement.classList.toggle(
     "music-on-storefront"
   )
@@ -85,6 +94,9 @@ export function toggleMusicShop() {
 }
 
 export function toggleMusicFire() {
+  document.documentElement.classList.remove("music-on-tree")
+  document.documentElement.classList.remove("music-on-cloud")
+  document.documentElement.classList.remove("music-on-storefront")
   state.isMute = document.documentElement.classList.toggle("music-on-campfire")
 
   if (state.isMute) {
